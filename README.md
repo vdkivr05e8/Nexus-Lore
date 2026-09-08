@@ -113,10 +113,10 @@ npm run build
 
 `backend/scripts/` 包含现有文章集的导入和整理工具：
 
-- `import_all_canon_hubs.py`：导入多个设定中心及其文章目录。
-- `import_aces_and_eights.py`：导入并整理“死者手牌”。
-- `enrich_aces_and_eights_entities.py`：补充实体详情与正文证据。
-- `build_chronicle_events.py`：从来源日期标记构建 Chronicle 事件。
+- [`import_all_canon_hubs.py`](backend/scripts/import_all_canon_hubs.py)：导入多个设定中心及其文章目录。
+- [`import_aces_and_eights.py`](backend/scripts/import_aces_and_eights.py)：导入并整理“死者手牌”。
+- [`enrich_aces_and_eights_entities.py`](backend/scripts/enrich_aces_and_eights_entities.py)：补充实体详情与正文证据。
+- [`build_chronicle_events.py`](backend/scripts/build_chronicle_events.py)：从来源日期标记构建 Chronicle 事件。
 
 这些脚本会修改目标数据库。运行前应先使用设置页导出备份，并在脚本参数或环境变量中确认数据库地址。
 
